@@ -1,0 +1,79 @@
+body {
+    background-color: gray;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+}
+
+#playerSection {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1
+}
+
+#playerDrawnCard {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+}
+
+#playerScore {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+
+#opponentSection {
+    display: grid;
+    grid-column: 5;
+    grid-row: 1;
+}
+
+#opponentDrawnCard {
+    display: grid;
+    grid-row: 1;
+    grid-column: 4;
+    align-self: end;
+}
+
+#opponentScore {
+    display: grid;
+    grid-column: 5;
+    grid-row: 2;
+    text-align: center;
+}
+
+#centerText {
+    display: grid;
+    grid-row: 1;
+    grid-column: 3;
+    align-items: center;
+    text-align: center;
+}
+
+
+#buttons {
+    display: grid;
+    grid-column: 3;
+    grid-row: 2;
+    justify-content: center;
+}
+
+#drawButton {
+    order: 1;
+    font-size: 30px;
+}
+
+#newGameButton {
+    order: 2;
+}
+
+#autoRunSection {
+    order: 3;
+}

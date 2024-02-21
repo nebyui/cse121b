@@ -4,11 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>War Game</title>
+    <link rel="stylesheet" href="styles/final-styles.css">
 </head>
 
 <body>
+    <main>
+        <section id="playerSection">
+            <h2>Player</h2>
+            <img id="playerDeckImg" src="https://deckofcardsapi.com/static/img/back.png">
 
+        </section>
+        <section id="opponentSection">
+            <h2>Opponent</h2>
+            <img id="opponentDeckImg" src="https://deckofcardsapi.com/static/img/back.png">
+        </section>
+
+        <img id="playerDrawnCard" src="" alt="">
+
+        <img id="opponentDrawnCard" src="" alt="">
+
+        <h2 id="centerText">Press New Game to Begin</h2>
+
+        <h2 id="playerScore">26</h2>
+
+        <h2 id="opponentScore">26</h2>
+
+        <section id="buttons">
+            <button id="drawButton" disabled>Draw</button>
+            <button id="newGameButton">New Game</button>
+            <div id="autoRunSection">
+                <input type="checkbox" id="autoRunCheckbox">
+                <label id="autoRunLabel" for="autoRunCheckbox">Enable Auto Run</label>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="scripts/final-script.js"></script>
 </body>
 
 </html>
